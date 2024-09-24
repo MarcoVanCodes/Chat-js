@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #f0f4ff, #ffe6e6);
+    margin: 0;
+}
+
+main {
+    background-color: #e0f7fa;
+    width: 600px; 
+    height: 600px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#messages {
+    height: 80%;
+    overflow-y: scroll;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    background-color: #e0f7fa;
+}
+
+#chat-form {
+    display: flex;
+    padding: 10px;
+    background-color: #fff5f5;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.right {
+    position: relative;
+    align-self: flex-end;
+    background-color: #007bff; /* Azul */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    max-width: 60%;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+
+.right::after {
+    content: '';
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #007bff transparent transparent transparent;
+    top: 0;
+    right: -10px;
+}
+
+
+.left {
+    position: relative;
+    align-self: flex-start;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    max-width: 60%;
+    word-wrap: break-word;
+    margin-left: 10px;
+}
+
+.left::after {
+    content: '';
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ff4d4d transparent transparent transparent;
+    top: 0;
+    left: -10px;
+}
+
+
+/* Mensaje recibido de otros usuarios */
+.received {
+    position: relative;
+    align-self: flex-start;
+    background-color: #e0e0e0; 
+    color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    max-width: 60%;
+    word-wrap: break-word;
+    margin-left: 10px; 
+}
+
+.received::after {
+    content: '';
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #e0e0e0 transparent transparent transparent;
+    top: 0;
+    left: -10px;
+}
+
+
+
+
+
+
+
+
+
+
